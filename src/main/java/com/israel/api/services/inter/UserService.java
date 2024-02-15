@@ -1,4 +1,4 @@
-package com.israel.api.services;
+package com.israel.api.services.inter;
 
 import com.israel.api.model.User;
 

@@ -1,7 +1,7 @@
 package com.israel.api.controller;
 
 import com.israel.api.model.User;
-import com.israel.api.services.UserService;
+import com.israel.api.services.inter.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
