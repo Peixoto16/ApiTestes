@@ -1,6 +1,7 @@
 package com.israel.api.controller;
 
-import com.israel.api.model.User;
+
+import com.israel.api.dto.UserDto;
 import com.israel.api.services.inter.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,12 +16,11 @@ public class UserController {
 
     @Autowired
     private UserService service;
+
     @GetMapping(value = "/{id}")
-        public ResponseEntity<User> findById( @PathVariable Long id){
-
-        User user = service.findById(id);
-
-        return ResponseEntity.ok().body(user);
+    public ResponseEntity<UserDto> findById(@PathVariable Long id) {
+        UserDto userDto = service.findById(id);
+        return ResponseEntity.ok().body(userDto);
     }
 
 

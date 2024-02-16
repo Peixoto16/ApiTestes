@@ -1,9 +1,9 @@
 package com.israel.api.services.inter;
 
-import com.israel.api.model.User;
+import com.israel.api.dto.UserDto;
 
 public interface UserService {
 
-    User findById(Long id);
+    UserDto findById(Long id);
 
 }
